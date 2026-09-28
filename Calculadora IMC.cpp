@@ -1,5 +1,6 @@
 #include <iostream>
 #include <string>
+#include <cstdlib>
 using namespace std;
 float peso, altura, IMC;
  /* Valores de referencia...
@@ -19,17 +20,16 @@ int main (){
 	cout<<"Ingrese su altura en metros\n";
 	cin>>altura;
 	IMC=(peso/(altura*altura));
-	cout<<"\nResultado:"<<IMC;
+	cout<<"Resultado:\n"<<IMC;
 	if (IMC<18.5) {
-		cout<<"\nPeso inferior a lo normal";
+		cout<<"Peso inferior a lo normal\n";
 	}if (IMC>=18.5 && IMC<25) {
-		cout<<"\nPeso Normal";
+		cout<<"Peso Normal\n";
 	}if (IMC>=25 && IMC<30) {
-	    cout<<"\nPeso superior a lo normal";
+	    cout<<"Peso superior a lo normal\n";
 	}if (IMC>=30){
-		cout<<"\nObesidad";
-		cout<<"\nGordo avevo";
+		cout<<"Obesidad\n";
 	}
-	
+	system("pause");
 	return 0;
 }
